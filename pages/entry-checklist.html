@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entry Checklist</title>
+  <link rel="icon" href="../assets/Logo.png">
+  <link rel="stylesheet" href="../css/pages-style.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="../js/app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <h2 class="header-title">✅ Entry Checklist</h2>
+    </div>
+  </header>
+
+  <div class="center-wrapper">
+    <div class="container">
+      <div class="grid" id="checklist">
+        <label><input type="checkbox" class="main-check" value="Daily Bias matches HTF Trend" />Daily Bias matches HTF
+          Trend</label>
+        <label><input type="checkbox" class="main-check" value="Market Structure" />Market Structure</label>
+        <label><input type="checkbox" class="main-check" value="Price at Key Levels" />Price at Key Levels</label>
+        <label><input type="checkbox" class="main-check" value="Entry Zones" />Entry Zones</label>
+        <label><input type="checkbox" class="main-check" value="Liquidity" />Liquidity</label>
+        <label><input type="checkbox" class="main-check" value="Confirmation" />Confirmation</label>
+      </div>
+
+      <div class="confluence-box" id="confluenceBox">
+        <strong>Confluences: <span id="confluenceCount">0</span></strong>
+        <span class="a-plus" id="aPlus" style="display: none;">A+ Setup</span>
+        <br><br>
+        <label><input type="checkbox" class="confluence-check" value="Candle Range Theory" />Candle Range Theory</label>
+        <label><input type="checkbox" class="confluence-check" value="Inversion FVG" />Inversion FVG</label>
+      </div>
+
+      <button onclick="clearChecklist()">Clear Checklist</button>
+
+      <p class="motivation">"<span>Stay Disciplined. The Market Rewards Patience.</span>💪"</p>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="../index.html">⬅️ Back to Home</a>
+  </div>
+</body>
+
+</html>
