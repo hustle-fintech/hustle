@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <title>Entry Checklist</title>
   <link rel="icon" href="../assets/Logo.png">
-  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/pages-style.css">
   <script src="../js/app.js" defer></script>
@@ -15,16 +14,21 @@
 </head>
 
 <body>
-  <h2>Silver Bullet Entry Checklist</h2>
-  <button id="toggleDarkModeBtn" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+  <div class="header">
+    <h2 class="header-title">
+      <a href="../index.html">🔙</a>
+      Entry Checklist
+    </h2>
+    <button id="toggleDarkModeBtn" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+  </div>
 
-  <details open="" data-section="1">
-    <summary>1. Higher Timeframe Preparation</summary>
-    <label><input type="checkbox" data-section="1"> Identify current market structure on 1H/15M</label>
-    <label><input type="checkbox" data-section="1"> Check last 1H candle</label>
-    <label><input type="checkbox" data-section="1"> Mark market bias (bullish or bearish)</label>
+  <details data-section="1" open="">
+    <summary>1. Higher Timeframe Preparation</summary> <br>
+    <label><input type="checkbox" data-section="1"> Check last three 4H candles movement</label>
+    <label><input type="checkbox" data-section="1"> Identify current market structure (15M)</label>
+    <label><input type="checkbox" data-section="1"> Draw Trendlines (15M Higher - 3M Lower)</label>
     <label><input type="checkbox" data-section="1"> Mark swing highs/lows and liquidity zones</label>
-    <label><input type="checkbox" data-section="1"> Draw S/R, Order Blocks, Imbalances</label>
+    <label><input type="checkbox" data-section="1"> Mark Order Blocks, FVGs and Imbalances (run-away FVGs)</label>
     <div class="section-controls">
       <button class="checkAllBtn" type="button">Check All</button>
       <button class="clearSectionBtn" type="button">Clear This Section</button>
@@ -32,11 +36,12 @@
     </div>
   </details>
 
-  <details data-section="2" open="">
-    <summary>2. Time-Based Context</summary>
+  <details data-section="2">
+    <summary>2. Time-Based Context</summary> <br>
     <label><input type="checkbox" data-section="2"> Confirm NY session</label>
-    <label><input type="checkbox" data-section="2"> Is it 10:00 AM – 11:00 AM NY time?</label>
-    <label><input type="checkbox" data-section="2"> Check economic news events</label>
+    <label><input type="checkbox" data-section="2"> Is it after 09:00 AM New York Time?</label>
+    <label><input type="checkbox" data-section="2"> Confirm Silver Bullet Session (10:00 AM - 11:00 AM NY Time)</label>
+    <label><input type="checkbox" data-section="2"> Check economic news events (Red Folder News)</label>
     <div class="section-controls">
       <button class="checkAllBtn" type="button">Check All</button>
       <button class="clearSectionBtn" type="button">Clear This Section</button>
@@ -44,26 +49,26 @@
     </div>
   </details>
 
-  <details data-section="3" open="">
-    <summary>3. Silver Bullet Structure Setup</summary>
-    <label><input type="checkbox" data-section="3"> Identify liquidity sweep (high/low)</label>
-    <label><input type="checkbox" data-section="3"> Confirm Break of Structure(BOS) or Market Structure
-      Shift(MSS)</label>
+  <details data-section="3">
+    <summary>3. Silver Bullet Structure Setup</summary> <br>
+    <label><input type="checkbox" data-section="3"> Identify liquidity sweep in market direction</label>
+    <label><input type="checkbox" data-section="3"> Check EMA Levels (200 Above or Below)</label>
+    <label><input type="checkbox" data-section="3"> Confirm Break of Structure (BOS) or Market Structure Shift (MSS / CHoCH)</label>
     <label><input type="checkbox" data-section="3"> Entry inside FVG / OB / Breaker</label>
     <label><input type="checkbox" data-section="3"> Entry candle shows confirmation</label>
     <div class="section-controls">
       <button class="checkAllBtn" type="button">Check All</button>
       <button class="clearSectionBtn" type="button">Clear This Section</button>
-      <span class="accuracy" aria-live="polite">Accuracy: 25%</span>
+      <span class="accuracy" aria-live="polite">Accuracy: 0%</span>
     </div>
   </details>
 
-  <details data-section="4" open="">
-    <summary>4. Entry Execution</summary>
-    <label><input type="checkbox" data-section="4"> Confirm entry zone is inside OB/FVG</label>
+  <details data-section="4">
+    <summary>4. Entry Execution</summary> <br>
+    <label><input type="checkbox" data-section="4"> Confirm entry zone is inside OB / FVG</label>
     <label><input type="checkbox" data-section="4"> Ensure R:R is minimum 1:3</label>
-    <label><input type="checkbox" data-section="4"> Place SL beyond sweep wick/OB</label>
-    <label><input type="checkbox" data-section="4"> Define TP levels (equilibrium/liquidity)</label>
+    <label><input type="checkbox" data-section="4"> Place SL beyond sweep Wick / OB</label>
+    <label><input type="checkbox" data-section="4"> Define TP levels (Trend Continuation / Liquidity / PD Array)</label>
     <div class="section-controls">
       <button class="checkAllBtn" type="button">Check All</button>
       <button class="clearSectionBtn" type="button">Clear This Section</button>
@@ -71,9 +76,21 @@
     </div>
   </details>
 
-  <details data-section="5" open="">
-    <summary>5. Post-Entry Management</summary>
-    <label><input type="checkbox" data-section="5"> Risk per trade defined (0.5%–1%)</label>
+  <details data-section="5">
+    <summary>5. Bonus Filters</summary> <br>
+    <label><input type="checkbox" data-section="6"> RSI Confirmation</label>
+    <label><input type="checkbox" data-section="6"> Volume spike confirmation</label>
+    <label><input type="checkbox" data-section="6"> Kill zone Alignment</label>
+    <label><input type="checkbox" data-section="6"> SMT divergence present</label>
+    <div class="section-controls">
+      <button class="clearSectionBtn" type="button">Clear This Section</button>
+      <span class="accuracy" aria-live="polite">Accuracy: 0%</span>
+    </div>
+  </details>
+
+  <details data-section="6">
+    <summary>6. Post-Entry Management</summary> <br>
+    <label><input type="checkbox" data-section="5"> Risk per trade defined (0.25% - 0.5%)</label>
     <label><input type="checkbox" data-section="5"> No revenge trades if invalidated</label>
     <label><input type="checkbox" data-section="5"> Take screenshots for journaling</label>
     <label><input type="checkbox" data-section="5"> Record entry time, outcome, notes</label>
@@ -84,21 +101,11 @@
     </div>
   </details>
 
-  <details data-section="6" open="">
-    <summary>6. Bonus Filters</summary>
-    <label><input type="checkbox" data-section="6"> Volume spike confirmation</label>
-    <label><input type="checkbox" data-section="6"> Kill zone alignment</label>
-    <label><input type="checkbox" data-section="6"> SMT divergence present</label>
-    <label><input type="checkbox" data-section="6"> OBV / delta support bias</label>
-    <div class="section-controls">
-      <button class="clearSectionBtn" type="button">Clear This Section</button>
-      <span class="accuracy" aria-live="polite">Accuracy: 0%</span>
-    </div>
-  </details>
-
   <button id="clearAllBtn" type="button" style="margin-top:1rem;">Clear Entire Checklist</button>
 
-  <div id="accuracyContainer" aria-live="polite">Total Accuracy: 4%</div>
+  <p class="motivation">"<span>Stay Disciplined. The Market Rewards Patience.</span>💪"</p>
+
+  <div id="accuracyContainer" aria-live="polite">Total Accuracy: 0%</div>
 
   <div class="back-link">
     <a href="../index.html">⬅️ Back to Home</a>
